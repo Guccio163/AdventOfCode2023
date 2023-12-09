@@ -2,7 +2,7 @@
 Advent of Code 2023 edition solutions
 All the solutions are done by me, without the help of chat etc. ;)
 
-Every day brings a new reflection:
+Every task could be discribed by a title:
 
 - day 1: nice, there's a function .isdigit()
 - day 2: a lot of stripping (and splitting)
