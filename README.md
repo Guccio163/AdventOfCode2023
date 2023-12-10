@@ -13,3 +13,9 @@ Every task could be discribed by a title:
 - day 7: jokers make a lot of new scenarios
 - day 8: get LCM and submit
 - day 9: aaaa, array.reverse() reverses in place
+- day 10: At Code's End - Up is Down*
+<br>
+<br>
+<br>
+
+(*) Pirates of the Carribean reference; when navigating through a matrix (or an array of string) it's important to remember that going down is actually picking higher row number
