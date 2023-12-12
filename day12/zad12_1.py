@@ -40,3 +40,6 @@ for i in range(len(rows)):
     totalSum += possibleOutcome
     print("row ", i, ' ', possibleOutcome)
 print(totalSum)
+
+# 7110 is the correct answer
+# yes, this is a brute force
