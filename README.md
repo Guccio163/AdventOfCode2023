@@ -18,6 +18,7 @@ Every task could be discribed by a title:
 - day 12: what is a @cache ??
 - day 13: nothing better than simple solution
 - day 14: well, we've been in this state before...
+- day 15: when understanding what to do is harder than doing itself
 <br>
 <br>
 <br>
