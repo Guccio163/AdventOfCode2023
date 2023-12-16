@@ -113,10 +113,9 @@ def nextDirections(coords, direction, beamsArr):
 
 def findBiggestSum(i, j, startDir):
     beamsArr = [[1 for _ in lines[0]] for _ in lines]
-    start = [i, j]
-    toDo = [(start, startDir)]
+    toDo = [([i, j], startDir)]
 
-    while (toDo):
+    while toDo:
         task = toDo.pop()
         result = nextDirections(task[0], task[1], beamsArr)
         if result[0] == -1:
@@ -127,8 +126,7 @@ def findBiggestSum(i, j, startDir):
         else:
             toDo.append(result)
 
-    bigSum = sum([1 for row in beamsArr for element in row if element != 1])
-    return bigSum
+    return sum([1 for row in beamsArr for element in row if element != 1])
 
 
 reallyBigSum = 0
@@ -136,15 +134,14 @@ for j in [0, len(lines[0]) - 1]:
     startDir = LEFT
     if j == 0:
         startDir = RIGHT
-    for i in range(len(lines)):
-        reallyBigSum = max(reallyBigSum, findBiggestSum(i, j, startDir))
+    reallyBigSum = max(reallyBigSum, max([findBiggestSum(i, j, startDir) for i in range(height)]))
 
 for j in [0, len(lines) - 1]:
     startDir = UP
     if j == 0:
         startDir = DOWN
-    for i in range(len(lines[0])):
-        reallyBigSum = max(reallyBigSum, findBiggestSum(j, i, startDir))
+    reallyBigSum = max(reallyBigSum, max([findBiggestSum(j, i, startDir) for i in range(height)]))
+
 
 print(reallyBigSum)
 
