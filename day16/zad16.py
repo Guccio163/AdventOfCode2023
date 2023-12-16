@@ -147,5 +147,6 @@ for j in [0, len(lines) - 1]:
         reallyBigSum = max(reallyBigSum, findBiggestSum(j, i, startDir))
 
 print(reallyBigSum)
+
 # first: 7242
 # second: 7572
