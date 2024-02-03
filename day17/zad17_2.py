@@ -57,8 +57,10 @@ while not queue.empty():
             d[i + step[0]][j + step[1]] = d[i][j] + int(lines[i + step[0]][j + step[1]])
             steps[i + step[0]][j + step[1]] = step
             queue.put((d[i + step[0]][j + step[1]], i + step[0], j + step[1] ))
-        elif are3inRow(i, j, step):
-            print("there are 3 in row ", i, j, step)
+        # elif are3inRow(i, j, step):
+        #     print("there are 3 in row ", i, j, step)
+for line in d:
+    print(line)
 print(d[height][width])
 
 def convertSteps(step):

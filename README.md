@@ -21,6 +21,7 @@ Every task could be discribed by a title:
 - day 15: when understanding what to do is harder than doing itself
 - day 16: recursion depth level exceeded :O
 <br>
+- / sadly failed to finish rest of the days due to amount of work and exams /
 <br>
 <br>
 
